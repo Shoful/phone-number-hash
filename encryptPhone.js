@@ -17,4 +17,3 @@ function encryptPhoneNumber(num) {
   }
   return digits.join("");
 }
-console.log(encryptPhoneNumber("800-800-8000"));
