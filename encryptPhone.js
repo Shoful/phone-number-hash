@@ -6,3 +6,15 @@
 
 
 module.exports = encryptPhoneNumber;
+
+function encryptPhoneNumber(num) {
+  let digits = num.split('');
+  for (let i = 0; i <= 7; i++) {
+    if (digits[i] == '-') {
+    } else {
+      digits[i] = '*';
+    }
+  }
+  return digits.join("");
+}
+console.log(encryptPhoneNumber("800-800-8000"));
